@@ -1,0 +1,12 @@
+{
+    "name": "adam",
+    "firstTestParams": [
+        {"activityName": "Search", "resourceType": "Fixed"}
+    ],
+    "validatorTestParams": [
+        [{"activityName": "Search", "resourceType": "Fixed"}, 
+            {"expectedCode": 200}],
+        [{"activityName": "Search", "resourceType": "Fixed", "quantity": 2}, 
+            {"expectedCode": 200}]
+    ]
+}
