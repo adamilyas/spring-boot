@@ -1,6 +1,9 @@
 package com.demo.artifact.controller;
 
+import javax.annotation.PostConstruct;
+
 import com.demo.artifact.service.ResourceService;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,4 +32,13 @@ public class ResourceRestController {
     public ObjectNode findById(@PathVariable("id") int id) {
         return service.findByResourceId(id);
     }
+
+    // to test configuration properties
+    @RequestMapping(value = "/init", method = RequestMethod.GET)
+    public ObjectNode getInitProperties(){
+        ObjectNode objectNode = JsonNodeFactory.instance.objectNode();
+        objectNode.put("totalItemsInStorage", service.getTotalItemsInStorage());
+        return objectNode;
+    }
+
 }
