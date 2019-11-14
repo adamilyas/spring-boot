@@ -1,0 +1,9 @@
+amazon:
+  access:
+    key: key
+    secret-key: key2
+  region: us-east-1
+  end-point:
+    url: http://localhost:8000/
+server:
+  port: 8080
