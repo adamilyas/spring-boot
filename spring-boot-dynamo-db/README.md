@@ -9,6 +9,14 @@ $ pip install boto3
 $ python setup_db.py
 ```
 
+## Running
+For local testing, make sure that Local DB is running using ^ steps in Setup
+```
+$ cd to-this-folder
+$ mvn clean install
+$ mvn spring-boot:run
+```
+
 ## Project Logic
 Controller -> Repository -> query from Local DynamoDB
 
