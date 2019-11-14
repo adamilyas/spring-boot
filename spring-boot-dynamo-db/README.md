@@ -22,8 +22,8 @@ Controller -> Repository -> query from Local DynamoDB
 Try testing via Postman: https://www.getpostman.com/
 
 Insert Data:
-  POST localhost:8080/message
-  RequestBody:
+  - POST localhost:8080/message
+  - RequestBody:
   ```
   {
     "recipient": "adam",
@@ -33,9 +33,9 @@ Insert Data:
   ```
 
 Query Data via recipient and/or date
-  GET localhost:8080/message?recipient=adam&date=2019
-  GET localhost:8080/message?recipient=adam&date=2019
-  GET localhost:8080/message?recipient=adam&date=2019-11-15
+  - GET localhost:8080/message?recipient=adam&date=2019
+  - GET localhost:8080/message?recipient=adam&date=2019
+  - GET localhost:8080/message?recipient=adam&date=2019-11-15
 
 
 ## Notes
