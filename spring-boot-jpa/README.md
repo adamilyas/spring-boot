@@ -2,7 +2,6 @@
 ## Spring initializr
 [https://start.spring.io/](https://start.spring.io/)
 - Spring Web
-- Thymeleaf
 - Spring Data JPA
 - H2 Database
 - Spring Boot Actuator
