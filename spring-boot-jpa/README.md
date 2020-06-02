@@ -1,4 +1,11 @@
 # Springboot Project
+
+## Install and run
+Make sure you have java 1.8 and mvn to run the following:
+```
+mvn clean install; mvn spring-boot:run;
+```
+
 ## Spring initializr
 [https://start.spring.io/](https://start.spring.io/)
 - Spring Web
